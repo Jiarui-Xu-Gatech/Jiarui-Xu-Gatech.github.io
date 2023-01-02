@@ -1,8 +1,47 @@
-<p>Hello 大家好</p>
-<p>This is Jiarui Xu. Welcome to my personal website 我是许家瑞，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+            $( document ).ready(function() {
+            	$("#script").load("html/ref.html");
+                $("#header").load("html/left_bar.html");
+                $("#footer").load("html/footer.html");
+            });
+
+        </script>
+    
+	    <!-- Script -->
+	    <div id='script'></div>    
+        <meta charset="UTF-8">
+	</head>
+	<body id="top" style="visibility:hidden">
+
+		<!-- Header -->
+		<header id="header"></header>
+
+		<!-- Main -->
+		<div id="main">
+			<section id="about">
+				<p> A slave of music. 🎵🎶</p>
+
+				<p> Currently a Computer Science & Music Technology master student working with <a href="https://www.alexanderlerch.com/">Prof. Alexander Lerch</a> at <a href="https://music.gatech.edu/master-science-music-technology">Georgia Institute of Technology</a>. <br><br>
+
+				I was a research intern at <a href="https://www.merl.com/">Mitsubishi Electric Research Laboratories (MERL)</a>, and an audio algorithm intern at Netflix. 
+				I was also a research assistant working with <a href="http://mac.citi.sinica.edu.tw/~yang/">Dr. Yi-Hsuan Yang</a> in <a href="http://musicai.citi.sinica.edu.tw/">Music and AI Lab</a>, Academia Sinica. <br><br>
+
+				My research interests are at the intersection of machine learning and music information retrieval. Especially for music auto-tagging and music separation. See my 
+                <a href="https://biboamy.github.io/research.html">projects</a> for details.<br><br>
+                
+                I write application and website sometimes. I am also an amateur intrument players. 
+
+                </p>  
+			</section>
+        </div>
+			
+		<!-- Footer -->
+		<footer id="footer"></footer>
+
+	</body>
+</html>
